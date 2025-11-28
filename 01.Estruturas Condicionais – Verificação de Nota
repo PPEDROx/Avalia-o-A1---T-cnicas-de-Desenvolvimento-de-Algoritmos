@@ -1,0 +1,22 @@
+01.Estruturas Condicionais – Verificação de Nota
+
+# Programa para verificar se o aluno foi aprovado ou reprovado
+
+# Entrada: usuário informa a nota
+nota = input("Digite a nota do aluno (0 a 10): ")
+
+# Verifica se a entrada é numérica
+if nota.replace('.', '', 1).isdigit():
+  nota = float(nota) # Converte para número decimal
+
+    # Verifica se a nota está dentro do intervalo permitido
+    if 0 <= nota <= 10:
+      # Média de aprovação = 6
+      if nota >= 6:
+        print("Aprovado! A nota atingiu ou superou a média.")
+      elif nota < 6:
+        print("Reprovado! A nota ficou abaixo da média.")
+  else:
+      print("Nota inválida! Digite um número entre 0 e 10.")
+else:
+  print("Entrada inválida! Digite apenas números.")
