@@ -1,0 +1,24 @@
+2.1 – Usando FOR
+
+# Imprime números pares de 1 a 100 usando for
+
+for numero in range(1, 101):
+    # Verifica se o número é par
+    if numero % 2 == 0:
+        print(numero)
+
+
+2.2 – Usando WHILE
+
+# Imprime números pares de 1 a 100 usando while
+
+numero = 1 # Começa no 1
+
+while numero <= 100:
+    # Se o número for par, imprime
+    if numero % 2 == 0:
+        print(numero)
+
+    numero += 1 # Incrementa o contador
+
+
