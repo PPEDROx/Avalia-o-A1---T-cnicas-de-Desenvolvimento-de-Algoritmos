@@ -1,0 +1,25 @@
+#  Programa para cadastrar contatos usando dicionarios
+
+listas_contatos = [] # Listas que ira guardar cada dicionario de contato
+
+while True:
+    nome = input ("Digite o nome do contato (ou 'sair' para finalizar):
+
+    #Condição para encerrar o programa 
+    if nome.lower() == "sair":
+        break
+    telefone = input ("Digite o telefone do contato: ")
+
+    #Cria o dicionario com as informações do contato
+    contato = {
+        "nome": nome,
+        "telefone": telefone
+    }
+
+    #Adiciona o dicionario a lista
+    lista_contato.append(contato)
+
+#Exibe todos os contatos cadastrados
+print("\nLista de contatos cadastrados:")
+for pessoa in lista_contatos:
+    print(f"Nome: {pessoa['nome']} | Telefone: {pessoa['telefone']}")
