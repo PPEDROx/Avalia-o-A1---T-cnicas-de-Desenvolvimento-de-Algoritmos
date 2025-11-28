@@ -1,0 +1,24 @@
+# Programa para receber números, armazenar em uma lista e exibir a soma
+final
+
+lista_numeros = [] # Lista para guardar os números
+
+while True:
+    valor = input("Digite um número (ou 'sair' para finalizar): ")
+
+    # Condição para encerrar o programa
+    if valor.lower() == "sair":
+          break
+
+    # Verifica se o valor digitado é um número
+    if valor.replace('.', '', 1).isdigit():
+        valor = float(valor) # Converte para número
+        lista_numeros.append(valor) # Adiciona à lista
+    else:
+      print("Valor inválido! Digite apenas números.")
+
+# Soma todos os valores da lista
+soma_total = sum(lista_numeros)
+
+# Exibe a soma final
+print("\nSoma total dos números digitados:", soma_total)
