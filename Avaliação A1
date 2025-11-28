@@ -1,1 +1,111 @@
+01.Estruturas Condicionais – Verificação de Nota
 
+# Programa para verificar se o aluno foi aprovado ou reprovado
+
+# Entrada: usuário informa a nota
+nota = input("Digite a nota do aluno (0 a 10): ")
+
+# Verifica se a entrada é numérica
+if nota.replace('.', '', 1).isdigit():
+  nota = float(nota) # Converte para número decimal
+
+    # Verifica se a nota está dentro do intervalo permitido
+    if 0 <= nota <= 10:
+      # Média de aprovação = 6
+      if nota >= 6:
+        print("Aprovado! A nota atingiu ou superou a média.")
+      elif nota < 6:
+        print("Reprovado! A nota ficou abaixo da média.")
+  else:
+      print("Nota inválida! Digite um número entre 0 e 10.")
+else:
+  print("Entrada inválida! Digite apenas números.")
+
+
+
+02. Estruturas de Repetição
+
+2.1 – Usando FOR
+
+# Imprime números pares de 1 a 100 usando for
+
+for numero in range(1, 101):
+    # Verifica se o número é par
+    if numero % 2 == 0:
+        print(numero)
+
+
+2.2 – Usando WHILE
+
+# Imprime números pares de 1 a 100 usando while
+
+numero = 1 # Começa no 1
+
+while numero <= 100:
+    # Se o número for par, imprime
+    if numero % 2 == 0:
+        print(numero)
+
+    numero += 1 # Incrementa o contador
+
+
+
+03. Listas – Soma de Números
+
+# Programa para receber números, armazenar em uma lista e exibir a soma
+final
+
+lista_numeros = [] # Lista para guardar os números
+
+while True:
+    valor = input("Digite um número (ou 'sair' para finalizar): ")
+
+    # Condição para encerrar o programa
+    if valor.lower() == "sair":
+          break
+
+    # Verifica se o valor digitado é um número
+    if valor.replace('.', '', 1).isdigit():
+        valor = float(valor) # Converte para número
+        lista_numeros.append(valor) # Adiciona à lista
+    else:
+      print("Valor inválido! Digite apenas números.")
+
+# Soma todos os valores da lista
+soma_total = sum(lista_numeros)
+
+# Exibe a soma final
+print("\nSoma total dos números digitados:", soma_total)
+
+
+
+04. Dicionários – Cadastro de Contatos
+
+# Programa para cadastrar contatos usando dicionários
+
+lista_contatos = [] # Lista que irá guardar cada dicionário de contato
+
+while True:
+      nome = input("Digite o nome do contato (ou 'sair' para finalizar):
+")
+
+      # Condição para encerrar o programa
+      if nome.lower() == "sair":
+              break
+
+      telefone = input("Digite o telefone do contato: ")
+
+      # Cria o dicionário com as informações do contato
+      contato = {
+            "nome": nome,
+            "telefone": telefone
+  }
+
+      # Adiciona o dicionário à lista
+      lista_contatos.append(contato)
+
+
+# Exibe todos os contatos cadastrados
+print("\nLista de contatos cadastrados:")
+for pessoa in lista_contatos:
+      print(f"Nome: {pessoa['nome']} | Telefone: {pessoa['telefone']}")
