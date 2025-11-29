@@ -1,4 +1,4 @@
-# Avalia-o-A1---T-cnicas-de-Desenvolvimento-de-Algoritmos
+# Avaliação-A1---Técnicas-de-Desenvolvimento-de-Algoritmos
 Atividade da professora Kadidja
 
 📘 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos
