@@ -12,6 +12,8 @@ Os códigos seguem as orientações da avaliação:
 ✔ Bem comentados
 ✔ Organizados
 ✔ Fáceis de compreender
+
+
 🧩 01. Estruturas Condicionais –
 Verificação de Nota
 Arquivo: 1-estruturas-condicionais/verificacao_nota.py
